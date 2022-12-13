@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
-    outline: 1px solid #f00;
+    outline: 1px solid !--#f00;
 }
 
 /* header { */
@@ -19,8 +19,9 @@
     justify-content: space-between;
 }
 
-#header .inner h1 {
-    /* padding: 0 100px; */
+#header .inner h1 img {
+    font-size: 0;
+
 }
 
 #header .gnb>ul {
@@ -35,7 +36,7 @@
 #header .gnb>ul>li {
     position: relative;
     font-size: 18px;
-
+    vertical-align: middle;
 }
 
 #header .gnb>ul>li ul {
@@ -100,7 +101,7 @@
 
 .mainVisual .mainSlide figure {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 .mainVisual .mainVisual_txt {
